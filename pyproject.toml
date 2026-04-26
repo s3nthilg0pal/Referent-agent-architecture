@@ -14,12 +14,14 @@ dependencies = [
   "agent-framework",
   "azure-identity",
   "python-dotenv",
+  "openai",
 ]
 
 [project.scripts]
 agent-reference-arch = "agent_reference_arch.cli:main"
 planner = "agent_reference_arch.agents.planner.agent:main"
 planner-foundry = "agent_reference_arch.agents.planner_foundry.agent:main"
+planner-lmstudio = "agent_reference_arch.agents.planner_lmstudio.agent:main"
 
 [dependency-groups]
 dev = [
