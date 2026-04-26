@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-reference-arch"
+version = "0.1.0"
+description = "A Python project scaffold managed with uv."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "gsk" }]
+dependencies = [
+  "agent-framework",
+  "azure-identity",
+  "python-dotenv",
+]
+
+[project.scripts]
+agent-reference-arch = "agent_reference_arch.cli:main"
+planner = "agent_reference_arch.agents.planner.agent:main"
+planner-foundry = "agent_reference_arch.agents.planner_foundry.agent:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.2",
+  "ruff>=0.6",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
