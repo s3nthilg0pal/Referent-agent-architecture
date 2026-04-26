@@ -1,6 +1,6 @@
 # Planner LM Studio agent
 
-This variant keeps the planner folder shape, but it connects through the Microsoft Agent Framework OpenAI client with Azure OpenAI-style settings. That makes it easy to point at a local LM Studio server.
+This variant keeps the planner folder shape, but it connects through the Microsoft Agent Framework OpenAI client using the standard OpenAI-compatible LM Studio endpoint.
 
 ## Files
 

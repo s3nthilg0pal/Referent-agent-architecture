@@ -25,10 +25,14 @@ pattern used in the Microsoft Agent Framework samples.
    uv run planner
    uv run planner-foundry
    uv run planner-lmstudio
+   uv run agent-gradio
    ```
 
    The LM Studio variant expects `LM_STUDIO_MODEL` and can use the default
-   local OpenAI-compatible endpoint at `http://localhost:1234/v1`.
+   local OpenAI-compatible endpoint at `http://localhost:1234/v1` with the
+   default API key `lm-studio`.
+
+   The Gradio UI lets you pick any planner backend from a browser.
 
 3. Run the tests:
 

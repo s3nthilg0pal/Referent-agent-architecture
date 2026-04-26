@@ -15,6 +15,7 @@ dependencies = [
   "azure-identity",
   "python-dotenv",
   "openai",
+  "gradio",
 ]
 
 [project.scripts]
@@ -22,6 +23,7 @@ agent-reference-arch = "agent_reference_arch.cli:main"
 planner = "agent_reference_arch.agents.planner.agent:main"
 planner-foundry = "agent_reference_arch.agents.planner_foundry.agent:main"
 planner-lmstudio = "agent_reference_arch.agents.planner_lmstudio.agent:main"
+agent-gradio = "agent_reference_arch.gradio_app:main"
 
 [dependency-groups]
 dev = [
